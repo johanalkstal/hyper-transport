@@ -1,0 +1,28 @@
+{
+	"compilerOptions": {
+		"jsx": "precompile",
+		"jsxImportSource": "hono/jsx",
+		"types": [
+			"./src/hono.d.ts"
+		]
+	},
+	"imports": {
+		"$/": "./src/",
+		"hono": "https://deno.land/x/hono@v3.10.0/",
+		"hono/": "https://deno.land/x/hono@v3.10.0/",
+		"hono/html": "https://deno.land/x/hono@v3.10.0/helper/html/index.ts",
+		"hono/jsx": "https://deno.land/x/hono@v3.10.0/jsx/index.ts",
+		"hono/jsx/jsx-runtime": "https://deno.land/x/hono@v3.10.0/jsx/jsx-runtime.ts",
+		"std/": "https://deno.land/std@0.202.0/"
+	},
+	"tasks": {
+		"dev": "deno run --allow-net --allow-read --unstable-hmr=src/ ./src/main.ts"
+	},
+	"lint": {
+		"rules": {
+			"exclude": [
+				"prefer-const"
+			]
+		}
+	}
+}
