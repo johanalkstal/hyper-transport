@@ -29,11 +29,11 @@ jobs:
           node-version: lts/*
 
       - name: Build step
-        run: "npm install && npm run tailwind:build"
+        run: "npm install && npm run build"
 
       - name: Upload to Deno Deploy
         uses: denoland/deployctl@v1
         with:
-          project: "happy-dingo-65"
+          project: "hyper-transport"
           entrypoint: "src/main.ts"
           root: "."
