@@ -1,4 +1,4 @@
 module.exports = {
-  content: ["./src/**/*.vto"],
+  content: ["./src/**/*.ts"],
   theme: {},
 };
