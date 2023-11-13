@@ -1,5 +1,6 @@
 {
 	"scripts": {
+		"build": "tailwindcss -i ./src/tailwind.css -o ./public/styles.css",
 		"tailwind": "tailwindcss -i ./src/tailwind.css -o ./public/styles.css -w"
 	},
 	"devDependencies": {
